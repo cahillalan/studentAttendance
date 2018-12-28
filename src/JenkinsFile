@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'make check || true' 
-                junit '**/src/studentTest*.xml' 
+                junit '**/studentTest*.xml' 
             }
         }
         stage('Deploy') {
