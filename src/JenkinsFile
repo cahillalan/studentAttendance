@@ -15,7 +15,7 @@ stages {
         
         stage('Test') {
             steps {
-            echo 'Testing....'
+        bat 'java -cp "C:\\Users\\Cahil\\.p2\\pool\\plugins\\org.junit_4.12.0.v201504281640\\junit.jar";"C:\\Users\\Cahil\\.p2\\pool\\plugins\\org.hamcrest.core_1.3.0.v201303031735.jar";. org.junit.runner.JUnitCore "src\\studentTest.java"'
             }
         }
         stage('Deploy') {
